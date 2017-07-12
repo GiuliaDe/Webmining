@@ -7,6 +7,13 @@ elist= [(1,5),(1,6),(1,7),(1,8),(1,4),(2,5),(2,7),(2,9),(3,4),(3,6),(3,9),(0,5),
 g = Graph(vertex_attrs={"label":vlist}, edges=elist, directed=True)
 # g.add_vertices(10)
 # g.add_edges(elist)
+g.es["weight"] = 1.0
+g["names"] = "Skills graph"
+
+for tup in elist:
+    g[tup[0], tup[1]] = 2
+
+g.save("out.txt", format="ncol")
 
 plot(g)
 
