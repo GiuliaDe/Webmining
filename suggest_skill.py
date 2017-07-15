@@ -18,12 +18,11 @@ with open('cover_graph.csv','r') as f:
 # requested_skill = "AutoCAD"
 #
 # connected_skill = skill_dic[requested_skill]
-#
 # print (connected_skill)
-#
 #
 # print (max(connected_skill.iteritems(), key=operator.itemgetter(1))[0])
 # print (sorted(connected_skill.iteritems(), key=operator.itemgetter(1), reverse=True)[:5])
+
 print("#############")
 print("Welcome to the DTV skill recommendation system")
 # print("Benvenuto al sistema di raccomandazione di competenze DTV")
